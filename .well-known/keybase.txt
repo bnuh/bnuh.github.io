@@ -5,65 +5,64 @@ https://keybase.io/bnuh
 I hereby claim:
 
   * I am an admin of https://brymel.github.io
-    * I am bnuh (https://keybase.io/bnuh) on keybase.
-      * I have a public key with fingerprint 098A A29F F578 CAAC 3377  0942 33AF FF1A 4525 1167
+  * I am bnuh (https://keybase.io/bnuh) on keybase.
+  * I have a public key with fingerprint 098A A29F F578 CAAC 3377  0942 33AF FF1A 4525 1167
 
-      To do so, I am signing this object:
+To do so, I am signing this object:
 
-      {
-              "body": {
-                          "key": {
-                                          "eldest_kid": "0101acbf13b6fab15da974070766aeff289f91191868eacd9cc6aa297d359ea256690a",
-                                                      "fingerprint": "098aa29ff578caac3377094233afff1a45251167",
-                                                                  "host": "keybase.io",
-                                                                              "key_id": "33afff1a45251167",
-                                                                                          "kid": "0101acbf13b6fab15da974070766aeff289f91191868eacd9cc6aa297d359ea256690a",
-                                                                                                      "uid": "08726afd3fdaf19363fbfb806d5f0919",
-                                                                                                                  "username": "bnuh"
-                                                                                                                          },
-                                                                                                                                  "service": {
-                                                                                                                                                  "hostname": "brymel.github.io",
-                                                                                                                                                              "protocol": "https:"
-                                                                                                                                                                      },
-                                                                                                                                                                              "type": "web_service_binding",
-                                                                                                                                                                                      "version": 1
-                                                                                                                                                                                          },
-                                                                                                                                                                                              "ctime": 1488309622,
-                                                                                                                                                                                                  "expire_in": 157680000,
-                                                                                                                                                                                                      "prev": "9a57b9a3b11077ebe1c96d334733e6239f189c020466f5af7e92fb606b33238e",
-                                                                                                                                                                                                          "seqno": 8,
-                                                                                                                                                                                                              "tag": "signature"
-      }
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101acbf13b6fab15da974070766aeff289f91191868eacd9cc6aa297d359ea256690a",
+            "fingerprint": "098aa29ff578caac3377094233afff1a45251167",
+            "host": "keybase.io",
+            "key_id": "33afff1a45251167",
+            "kid": "0101acbf13b6fab15da974070766aeff289f91191868eacd9cc6aa297d359ea256690a",
+            "uid": "08726afd3fdaf19363fbfb806d5f0919",
+            "username": "bnuh"
+        },
+        "service": {
+            "hostname": "brymel.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1488309622,
+    "expire_in": 157680000,
+    "prev": "9a57b9a3b11077ebe1c96d334733e6239f189c020466f5af7e92fb606b33238e",
+    "seqno": 8,
+    "tag": "signature"
+}
 
-      which yields the signature:
+which yields the signature:
 
-      -----BEGIN PGP MESSAGE-----
-      Version: Keybase OpenPGP v2.0.64
-      Comment: https://keybase.io/crypto
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.64
+Comment: https://keybase.io/crypto
 
-      yMIqAnicrVJbSBRRGN7tSkaW3ViLKCaMisXOmbNzZs5WJCEFFUhImREtZ2bOWadd
-      Z/Yyu7atYtDtoaAyy4gECyoiupAkGXSxfDDUJCPpJaObRPiQFkkY0kzlW4+dl8P5
-      /+/7zvf9/O0zJnpyvGNf2e4z/Z+93s62hpRnx53udFZQLT0jBLNChP2+WFRnSTsU
-      MXQhKAAIINVUDpGKOVWhpFMiB4AMZIwp41xUCCcQEqhghVFNJ5qGKRWJrCOJMCpK
-      GBNABb/ADTPMErGEYdquLFFcFOeSrGiUagjJMiABESHKOYc0IIkShFh2iBVW0mU4
-      5lSaZIWG5dScR+i3vX/g/7Pv1B85RRYx5TriOuWQIIy4ylUFYF3igEDiApMsYdJK
-      5qBVM1Uh1PgFp5I2NOYO1U0x3k1kKlm0MGzYFSn1T55YwrItzYo63QrbjiWDLtvO
-      xFx4FVNDf4VCqmHqzhwdRpolkoZlCkHoIDXbcJVhQFEQIFgU/QLbGzMSLGS4CEnG
-      CnCO+w9LO5KESrJKKFIhBLLMVAY1gnWEAjJCDIuIcKgQDYgggDGXKJcZEbmKAVYR
-      EpHCBDda3LSEoOLYpGFHMmmETWqnEkyoefxo1ySPN8czZfIEd788OdNmjW9d5/Kp
-      Y4HWY0VVXXe79o2teLh1MAqsj+u2Pz96aHrv4eKZ35qPtz7/sv/BgpGiW5sbGi/m
-      r758un8g5umc+NI/mD2JvENv8q3FU+vetx25t63tZpmULRvp8M0fkS7tm1v9s+fG
-      k5fT7hw/AerPLFuSu2n2qw5fSW59/rA5Iz5rqPnw062ZVKS0tfjD/rdNtfP2nKuc
-      XL6l5/y6gwvr6/pWVkm+q2f72tvf+Vpu95Z1ZK21o9fy6gxvaXCxvWZ9dc2yRv1u
-      YctobXHDhs7mvFi66cDGg8MFi+JKpHtHUcH9OcPv135f1R3fCXILLlxf2jf0ZMPH
-      17OvPMz3lcfDgyUDeZneHy+eLf90qn/PL65yRQM=
-      =iH59
-      -----END PGP MESSAGE-----
+yMIqAnicrVJbSBRRGN7tSkaW3ViLKCaMisXOmbNzZs5WJCEFFUhImREtZ2bOWadd
+Z/Yyu7atYtDtoaAyy4gECyoiupAkGXSxfDDUJCPpJaObRPiQFkkY0kzlW4+dl8P5
+/+/7zvf9/O0zJnpyvGNf2e4z/Z+93s62hpRnx53udFZQLT0jBLNChP2+WFRnSTsU
+MXQhKAAIINVUDpGKOVWhpFMiB4AMZIwp41xUCCcQEqhghVFNJ5qGKRWJrCOJMCpK
+GBNABb/ADTPMErGEYdquLFFcFOeSrGiUagjJMiABESHKOYc0IIkShFh2iBVW0mU4
+5lSaZIWG5dScR+i3vX/g/7Pv1B85RRYx5TriOuWQIIy4ylUFYF3igEDiApMsYdJK
+5qBVM1Uh1PgFp5I2NOYO1U0x3k1kKlm0MGzYFSn1T55YwrItzYo63QrbjiWDLtvO
+xFx4FVNDf4VCqmHqzhwdRpolkoZlCkHoIDXbcJVhQFEQIFgU/QLbGzMSLGS4CEnG
+CnCO+w9LO5KESrJKKFIhBLLMVAY1gnWEAjJCDIuIcKgQDYgggDGXKJcZEbmKAVYR
+EpHCBDda3LSEoOLYpGFHMmmETWqnEkyoefxo1ySPN8czZfIEd788OdNmjW9d5/Kp
+Y4HWY0VVXXe79o2teLh1MAqsj+u2Pz96aHrv4eKZ35qPtz7/sv/BgpGiW5sbGi/m
+r758un8g5umc+NI/mD2JvENv8q3FU+vetx25t63tZpmULRvp8M0fkS7tm1v9s+fG
+k5fT7hw/AerPLFuSu2n2qw5fSW59/rA5Iz5rqPnw062ZVKS0tfjD/rdNtfP2nKuc
+XL6l5/y6gwvr6/pWVkm+q2f72tvf+Vpu95Z1ZK21o9fy6gxvaXCxvWZ9dc2yRv1u
+YctobXHDhs7mvFi66cDGg8MFi+JKpHtHUcH9OcPv135f1R3fCXILLlxf2jf0ZMPH
+17OvPMz3lcfDgyUDeZneHy+eLf90qn/PL65yRQM=
+=iH59
+-----END PGP MESSAGE-----
 
-      And finally, I am proving ownership of this host by posting or
-      appending to this document.
+And finally, I am proving ownership of this host by posting or
+appending to this document.
 
-      View my publicly-auditable identity here: https://keybase.io/bnuh
+View my publicly-auditable identity here: https://keybase.io/bnuh
 
-      ==================================================================
-
+==================================================================
