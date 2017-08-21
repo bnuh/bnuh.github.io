@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
-    svg { height: 55vw; }
+    svg { height: vmin; }
     .lab-gren { fill: rgba(249,130,232,0.5); transition:.6s fill; stroke:#5C5C5C;}
     .lab-gren:hover { fill: rgba(249,130,232,1); }
     .central{fill:rgba(238,233,129,0.5); transition:.6s fill;stroke:#5C5C5C;}
@@ -75,7 +75,6 @@
 </nav>
 
 <div class="container">
-<?xml version="1.0" encoding="utf-8"?>
 <svg x="0px" y="0px" viewBox="0 0 3000 2250">
 <a xlink:href="http://cbc.ca">
   <rect class="lab-gren" x="1500" y="210" width="50" height="50" stroke="#5C5C5C" fill="rgba(249,130,232,0.5)" />
