@@ -29,27 +29,57 @@ all;stroke:#5C5C5C;}
       <a class="navbar-brand" href="#">Heart Health Assessment</a>
     </div>
     <div>
+
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Research</a>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Research Study</a>
         <ul class="dropdown-menu">
           <li><a href="#">Page 1-1</a></li>
           <li><a href="#">Page 1-2</a></li>
           <li><a href="#">Page 1-3</a></li>
         </ul>
       </li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools</a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms</a>
       <ul class="dropdown-menu">
         <li><a href="#">Page 1-1</a></li>
         <li><a href="#">Page 1-2</a></li>
         <li><a href="#">Page 1-3</a></li>
       </ul>
     </li>
-    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Etc.</a>
+    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Guidelines</a>
     <ul class="dropdown-menu">
       <li><a href="#">Page 1-1</a></li>
       <li><a href="#">Page 1-2</a></li>
       <li><a href="#">Page 1-3</a></li>
+    </ul>
+  </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contacts</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Page 1-1</a></li>
+      <li><a href="#">Page 1-2</a></li>
+      <li><a href="#">Page 1-3</a></li>
+    </ul>
+  </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Patient Resources</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Page 1-1</a></li>
+      <li><a href="#">Page 1-2</a></li>
+      <li><a href="#">Page 1-3</a></li>
+    </ul>
+  </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Decision Tree</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Page 1-1</a></li>
+      <li><a href="#">Page 1-2</a></li>
+      <li><a href="#">Page 1-3</a></li>
+    </ul>
+  </li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Patients</a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Healthy Eating</a></li>
+      <li><a href="#">Smoking Cessation</a></li>
+      <li><a href="#">Reducing Stress</a></li>
+      <li><a href="#">Getting Active</a></li>
     </ul>
   </li>
 </ul>
