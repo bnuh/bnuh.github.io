@@ -1,5 +1,8 @@
 ---
-layout: page
-title: 
+layout: welcome
 sitemap: false
+title: 🍖
+cover: false
 ---
+
+`sup`

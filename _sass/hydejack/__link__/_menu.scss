@@ -67,8 +67,6 @@ $navbar-height: 5rem;
 }
 
 
-
-
 a.nav-btn, button.nav-btn {
   cursor: pointer;
   &:hover, &:focus {
@@ -85,7 +83,14 @@ a.nav-btn, button.nav-btn {
   pointer-events: none;
 }
 
-#_navbar { display: none }
+// #_navbar {
+//   z-index: 3;
+//   background-color: var(--body-bg);
+// }
+
+#_navbar {
+  display: none
+}
 
 .navbar {
   .loading { display: none; }
