@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Study Guides
+title: 🙇‍♂️
 description: >
   
 hide_description: true

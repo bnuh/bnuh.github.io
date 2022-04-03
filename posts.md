@@ -1,6 +1,6 @@
 ---
 layout: grid
-title: Posts
+title: 🌵
 description: >
   
 grouped: true

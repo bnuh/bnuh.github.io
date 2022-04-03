@@ -1,6 +1,6 @@
 ---
 layout: resume
-title: Résumé
+title: 💸
 description: >
   
 hide_description: true
