@@ -49,9 +49,9 @@ menu:
     url:               /blog/
   - title:             Résumé
     url:               /resume/
-  - title:             Music
-    url:               /resume/
   - title:             Study Guides
+    url:               /resume/
+  - title:             Music
     url:               /resume/
 
 # Add links to the footer.
@@ -71,19 +71,12 @@ paginate:              10
 paginate_path:         /blog/:num/
 
 
-# Theme
-# ---------------------------------------------------------------------------------------
-
-# theme: jekyll-theme-hydejack
-# remote_theme: hydecorp/hydejack@v9
-
-
 # Customizaton
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
 accent_image:          
-accent_color:          rgb(79,177,186)
+accent_color:          rgb(34,177,186)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
@@ -121,13 +114,6 @@ defaults:
   - scope:
       path:            assets/
     values:
-      sitemap:         false
-
-  # Don't include licenses in sitemap (feel free to delete)
-  - scope:
-      path:            licenses/
-    values:
-      layout:          plain
       sitemap:         false
 
   # # You can use the following to enable comments on all posts.
@@ -194,12 +180,12 @@ hydejack:
   no_push_state:       false
 
   # Set to `true` if you want to disable the drawer
-  no_drawer:           false
+  no_drawer:           true
 
   # Set to `true` if you don't to use the auto-hiding (JavaScript based) navbar.
   # Note that this will not hide the navbar completely, only replace it with a static one.
   # Use custom css to hide completely, e.g. `#_navbar { display: none }`.
-  no_navbar:           false
+  no_navbar:           true
 
   # Set to true to disable the built-in search functionality.
   # Note that search is disabled during local use to save on build time.
