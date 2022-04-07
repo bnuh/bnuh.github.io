@@ -1,0 +1,3 @@
+[submodule "assets/study-guides"]
+	path = assets/study-guides
+	url = git@github.com:bnuh/study-guides.git
