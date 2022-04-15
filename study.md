@@ -8,7 +8,9 @@ show_collection: study
 ---
 
 ```c
-int main(void) {
-
+while (1) {
+  if (!will_attend_class) {
+    study();
+  }
 }
 ```
