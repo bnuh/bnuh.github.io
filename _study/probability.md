@@ -23,7 +23,7 @@ date: '14-04-2022'
 - Range - *[Min, Max]*
 - Variance - *Average of deviation from the mean squared*
 - Standard Deviation - *Measure of average absolute deviation*
-- Skewness - *Measure of the shape of the distribution function*
+- Skewness - *Measure of the shape of the distribution **function***
 - Quantiles - *Generalization of the median to percentiles*
   
 ###  Observational vs. Experimental Data
@@ -32,11 +32,21 @@ Experimental Data involves manipulating objects to determine cause and effect in
 ### Probability Calculus
 Probability events have a total probability between zero and one.
 
-$Pr[An Event] = 1$
+\begin{equation}
+    Pr[\textrm{An Event}] = 1
+\end{equation}
 
-The definition of probability for how often an event is observed can be related to the number of repetiions of the experiment. 
+An event that is sure to happen
+{:.figcaption}
 
-$$ \begin{align*} |\psi_1\rangle &= a|0\rangle + b|1\rangle \\ |\psi_2\rangle &= c|0\rangle + d|1\rangle \end{align*} $$
+The definition of probability for how often an event is observed can be related to the number of repetions of the experiment.
+
+\begin{equation}
+    Pr[\textrm{Heads}] = \frac{\textrm{Number } k \textrm{ of Heads in }N \textrm{ coin tosses}}{N \textrm{ coin tosses}}
+\end{equation}
+
+Counting the probability of heads in a set of coin tosses
+{:.figcaption}
 
 The larger the number of repetiions, the higher accuracy with which we can predict the likelihood of an event happening.
 
