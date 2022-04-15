@@ -16,8 +16,18 @@
 // <<< LINK
 article {
   .katex-display, mjx-container[jax][display="true"] {
-    @extend .pre-base;
     padding: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--gray-bg);
+
+    // HACK: prevents painting for some reason
+    backface-visibility: hidden;
+
+    @media print {
+      width: 100%!important;
+      page-break-inside: avoid;
+      break-inside: avoid-page;
+    }
   }
 }
 // >>>
