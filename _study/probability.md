@@ -201,7 +201,7 @@ When a trial is repeated $$k$$ times, we form a sample space of outcomes made up
 
 #### The Rule of Product
 
-How many possibilities are there for the formation of $$k$$-tuples, if there are $N_i$ choices for the $$i$$th element?
+How many possibilities are there for the formation of $$k$$-tuples, if there are $$N_i$$ choices for the $$i$$th element?
 
 \begin{equation}
     N_1 * N_2 * ... N_k
@@ -243,29 +243,190 @@ The notation for permutations is $$P^{13}_3$$
 
 #### Combinations of Non-Unique Outcomes
 
+A *combination* is a way of choosing elements from a set in which order does not matter.
+
+Consider the following example: Lisa has 13 different ornaments and she wants to give 3 ornaments to her mom as a birthday gift (the order of the gifts does not matter). How many ways can she do this?
+
+We can think of Lisa giving her mom a first ornament, a second ornament, a third ornament, etc. This can be done in $$P^{13}_3$$ ways. However, Lisa's mom is receiving all three ornaments at once, so the order Lisa decides on the ornaments does not matter.
+
+There are $$3!$$ reorderings of the chosen ornaments, implying the total number of ways for Lisa to give her mom an unordered set of 5 ornaments is $$\frac{13!}{3!10!}$$.
+
+\begin{equation}
+    \frac{N!}{k!(N-k)!}
+\end{equation}
+
+Rule of Combinations or Unordered Permutations
+{:.figcaption}
+
+The notation for combinations is $$C^{N}_k$$ = $${N}\choose{k}$$
+
 ### Conditional Probability
+
+A **conditional probability** is a probability that a certain event will occur given some knowledge about the outcome or some other event. $$P[A \mid B]$$ is a conditional probability, it is read as "Probability of A given B".
+
+\begin{equation}
+    Pr[A|B] = \frac{Pr[AB]}{Pr[B]}
+\end{equation}
+
+Rule of Conditional Probability
+{:.figcaption}
+
+A simple example - A fair 12-sided die is rolled. What is the probability that the roll is a 3 given that the roll is odd?
+
+This is $$Pr[3 \mid \text{Odd}]$$ or $$\frac{Pr[3]Pr[\text{Odd}]}{Pr[\text{Odd}]}$$
+
+Because $$B$$ has already happened, the intersection of $$B$$ and $$A$$ can have the $$B$$ probability removed, because it is statistically redundant.
+
+\begin{equation}
+    Pr[A|B] = \frac{Pr[AB]}{Pr[B]} = \frac{Pr[B]Pr[A]}{Pr[A]} = Pr[B]
+\end{equation}
+
+Conditional Probability if statiscally independent
+{:.figcaption}
 
 #### Bayes Theorem
 
+When attempting to compute the conditional probability of two events, when only one event is known, the Bayes Theorem allows for a workaround.
+
+*Consider $$H$$ to be Hypothesis, and $$E$$ to be Evidence*
+
+\begin{equation}
+    Pr[H|E] = \frac{Pr[E|H] Pr[H]}{Pr[E]}
+\end{equation}
+
+Bayes Theorem
+{:.figcaption}
+
+We can expand the equation in the numerator to demonstrate fully:
+
+$$Pr[E|H]Pr[H] = \frac{Pr[EH]}{Pr[H]}*Pr[H] = Pr[EH] = Pr[HE]$$
+
+Therefore, $$Pr[H \mid E]$$ or $$\frac{Pr[HE]}{Pr[E]}$$ can be found from $$Pr[E \mid H]$$ and vice versa.
+
 #### Total Probability
+
+If $$A_1, A_2$$, and $$A_3$$ form a partition of the sample space, for each $$A_i$$
+
+\begin{equation}
+    Pr[A_i|B] = \frac{Pr[B|A_i] Pr[A_i]}{Pr[B]}, i = 1,2,3
+\end{equation}
+
+Total Probability
+{:.figcaption}
+
+Knowing this, $$Pr[B]$$ can be found from $$Pr[B \mid A_1] + Pr[B \mid A_2] + Pr[B \mid A_3]$$
+
+\begin{equation}
+    Pr[A_i|B] = \frac{Pr[B|A_i] Pr[A_i]}{Pr[B|A_1] + Pr[B|A_2] + Pr[B|A_3]}, i = 1,2,3
+\end{equation}
+
+Bayes General Rule
+{:.figcaption}
+
+\begin{equation}
+    Pr[B] = Pr[B|A_1] + Pr[B|A_2] + Pr[B|A_3]
+\end{equation}
+
+Total Probability, when $$A_1$$, $$A_2$$, $$A_3$$ form a partition
+{:.figcaption}
 
 ## Random Variables
 
+Random variables deal with a function $$X$$ which maps a number $$x$$ from the sample space $$S$$. The number can be placed on the real number line, and a probability assigned to it based on its random occurrence.
+
 ### Discrete Probabilty Distributions
+
+Discrete random variables involve events with a discrete set of values.
 
 #### Probability Mass Function
 
+The *Probability Mass Function*, or **PMF** $$f_k [k]$$ is a plotting of the probability of all events associated with a random variable $$K$$. The sum of all amplitudes of the graph, $$\sum f_k [k]$$ will be 1.
+
+For a given value $$k$$, the probability of this value is $$f_k[k] = Pr[K = k]$$.
+
+Consider $$f_k[k]$$ the ranking of weights of each possible outcome. If an outcome is more probable, it is heavier, and plotted above the others.
+
 #### Bernouli Random Variable
+
+A Bernoulli RV is a discrete variable which will only produce values of $$1$$ and $$0$$. Therefore, the likelhood of one will be $p$ and the other will be $$1-p$$.
 
 #### Binomial Random Variable
 
+The Bernoulli concept can be extended with combinatorics, for example in the base of binary transmission error. When detecting the error in the first $$k$$-bits of a $$n$$-bit transmission, $$f_K[k] =$$ $$n\choose{k}$$ $$p^k(1-p)^{(n-k)}$$.
+
+As shown in earlier sections, there are $$n\choose{k}$$ possible variations of $$k$$ bits in an $$n$$-bit long transmission. If our likelihood of non-error bits is $$p$$, and error is $$(1-p)$$, the above will be intuitively correct.
+
 #### Geometric Random Variable
+
+Geometric RVs concern a wait for an event to happen. Should the expected event be given $$p$$ probability, there will be $$k$$ consecutive $$(1-p)$$ events before the $$p$$ occurs. Therefore, as seen in the graph below, the event occuring at the second transmission will be $$(1-p)^2p$$.
+
+\begin{equation}
+    f_K[k] = p(1-p)^k
+\end{equation}
+  
+Geometric Random Variable PMF (0 $$\leq$$ k $$<$$ $$\infty$$)
+{:.figcaption}
 
 #### Poisson Random Variable
 
+For a situtation where revents occur randomly at a given rate $$\lambda$$ over a certain time interval $$t$$, the probability of $$k$$ events happening within this time frame has been experimentally verified with $$\lambda t$$ representing the average.
+
+\begin{equation}
+    f_K[k] = \frac{a^k}{k!}e^{-a}
+\end{equation}
+
+Poisson Random Variable PMF
+{:.figcaption}
+
+Note that for finding the probability of an event occurring after time $$t$$, the probability becomes $$Pr[0] + Pr[1] + Pr[2] ... + Pr[t]$$.
+
 #### Uniform Random Variable
 
+When all events are equally likely, the probability of each can be found easily from the uniform random variable PMF.
+
+\begin{equation}
+    f_K[k] = \frac{1}{n - m + 1}
+\end{equation}
+
+Uniform Distribution
+{:.figcaption}
+
 ### Continous RVs and Their Distributions
+
+For values which can take on a continuum of values, such as voltage, velocity, and mass, new tools are used to analyze their probability. The probability of these events is determined using the *Cumulative Distribution Function* or **CDF**, which is written as $$F_X(x) = Pr[X \leq x]$$.
+
+By this notation we can see that by following the graph from left to right, the probability of the event occuring to the **left** of value $$x$$ will be found by the amplitude of the CDF at that value. Therefore, as $$x \rightarrow \infty$$, $$F_x \rightarrow 1$$.
+
+When finding the probability of a value occurring between points $$a$$ and $$b$$, their CDF values can be used. Remember this is **Distribution**, not **Density**, as we'll see in the PDF below. By keeping this straight, their purposes should be easy to remember.
+
+\begin{equation}
+    Pr[a < X \leq b] = F_X(b) - F_x(a)
+\end{equation}
+
+CDF Probability Within a Range (b $$>$$ a)
+{:.figcaption}
+
+The *Probability Density Function* or **PDF** is a derivative of the CDF that can also be used to find this probability:
+
+\begin{equation}
+    Pr[a < X \leq b] = \int_{b}^{a}f_X(x)dx 
+\end{equation}
+
+CDF Probability Within a Range (b $$>$$ a) From Integration
+{:.figcaption}
+
+This can be seen to be similar to the Probability Mass Function, as it will integrate over its full range to $$1 -  \int_{\infty}^{\infty}f_X(x)dx = 1$$. The difference is due to continous distributions being non-discrete - we can no longer say an item has mass, but points will now be denser (equivalent to heavier).
+
+To use the PDF to find the probability of a number $$a + \Delta x$$, we can multiply the PDF value at this point by the increment value to find the probability.
+
+\begin{equation}
+    Pr[a < X \leq a + \Delta x] = f_X(a) \cdot \Delta x
+\end{equation}
+
+PDF Probability Within a Range ($$a < a + \Delta x$$)
+{:.figcaption}
+
+Integrating over a range ($$a, b$$) will also produce $$Pr[a < x \leq b]$$ from the PDF.
 
 ### Common Continuous RVs
 
