@@ -41,7 +41,7 @@ Experimental Data involves manipulating objects to determine cause and effect in
 Probability events have a total probability between zero and one.
 
 \begin{equation}
-    Pr[\textrm{An Event}] = 1
+    \text{Pr}[\textrm{An Event}] = 1
 \end{equation}
 
 An event that is sure to happen
@@ -50,7 +50,7 @@ An event that is sure to happen
 The definition of probability for how often an event is observed can be related to the number of repetions of the experiment.
 
 \begin{equation}
-    Pr[\textrm{Heads}] = \frac{\textrm{Number } k \textrm{ of Heads in }N \textrm{ coin tosses}}{N \textrm{ coin tosses}}
+    \text{Pr}[\textrm{Heads}] = \frac{\textrm{Number } k \textrm{ of Heads in }N \textrm{ coin tosses}}{N \textrm{ coin tosses}}
 \end{equation}
 
 Counting the probability of heads in a set of coin tosses
@@ -108,10 +108,10 @@ For $$A = \{1,2,3, 5\}$$ and $$B = \{3, 4\}$$, $$A_1A_2 = \{3\}$$
   
 ### Probability of Events
 
-1. For any event $$A$$: $$Pr[A] \geq 0$$
-2. For the full set, $$ Pr[S] = 1 $$
-3. If $$A$$ and $$B$$ are *Mutually Exclusive* then $$Pr[A + B] = Pr[A] + Pr[B]$$
-4. Axiom 3 can be extended: $$Pr[A_1 + A_2 + ... ] = Pr[A_1] + Pr[A_2] + ...$$
+1. For any event $$A$$: $$\text{Pr}[A] \geq 0$$
+2. For the full set, $$ \text{Pr}[S] = 1 $$
+3. If $$A$$ and $$B$$ are *Mutually Exclusive* then $$\text{Pr}[A + B] = \text{Pr}[A] + \text{Pr}[B]$$
+4. Axiom 3 can be extended: $$\text{Pr}[A_1 + A_2 + ... ] = \text{Pr}[A_1] + \text{Pr}[A_2] + ...$$
 
 *Mutual Exclusivity* refers to the fact that $$A$$ and $$B$$ will never occur simultaneously, ie $$AB = 0$$.
 
@@ -122,7 +122,7 @@ In cases where $$A$$ and $$B$$ can occur in the same set, Axiom 3 will not apply
 This is due to the fact that in overlapping events, the same area of probability will be counted twice, though it has no statistical importance.
 
 \begin{equation}
-    Pr[A_1 + A_2] = Pr[A_1] + Pr[A_2] - Pr[A_1A_2]
+    \text{Pr}[A_1 + A_2] = \text{Pr}[A_1] + \text{Pr}[A_2] - \text{Pr}[A_1A_2]
 \end{equation}
 
 Non mutually exclusive OR
@@ -133,7 +133,7 @@ Non mutually exclusive OR
 From expanding on these axioms, it can be seen that the complement of an event has a probability related to subtraction of itself from the sample space probability. If the chance of the event happening is known, the chance of an event not happening is found by subtracting this from absolute certainty.
 
 \begin{equation}
-    Pr[A^c] = 1 - Pr[A]
+    \text{Pr}[A^c] = 1 - \text{Pr}[A]
 \end{equation}
 
 The complement of a set versus the whole
@@ -144,7 +144,7 @@ The complement of a set versus the whole
 Two events $$A$$ and $$B$$ are said to be statiscally independent if:
 
 \begin{equation}
-    Pr[AB] = Pr[A]Pr[B]
+    \text{Pr}[AB] = \text{Pr}[A]\text{Pr}[B]
 \end{equation}
 
 Statistical independence
@@ -156,13 +156,13 @@ This refers to the fact that statistical data will happen independent of the pre
 
 From the rule of statistical independence, we can process repeated trials.
 
-$$Pr[H] = p$$
+$$\text{Pr}[H] = p$$
 
-$$Pr[T] = Pr[H^c] = 1 - p = q$$
+$$\text{Pr}[T] = \text{Pr}[H^c] = 1 - p = q$$
 
-$$Pr[HHH] = ppp = p^3$$
+$$\text{Pr}[HHH] = ppp = p^3$$
 
-$$Pr[HTH] = pqp = p^2q$$
+$$\text{Pr}[HTH] = pqp = p^2q$$
 
 Coin Flips
 {:.figcaption}
@@ -171,7 +171,7 @@ Knowing that the probability of either event is 0.5, we can take the list of pos
 
 $$
 \begin{aligned}
-Pr[\textrm{At least two heads}] &= Pr[HHH] + Pr[HHT] + Pr[HTH] + Pr[THH] \cr
+\text{Pr}[\textrm{At least two heads}] &= \text{Pr}[HHH] + \text{Pr}[HHT] + \text{Pr}[HTH] + \text{Pr}[THH] \cr
 
 &= ppp + ppq + pqp + qpp \cr
 
@@ -181,7 +181,7 @@ Pr[\textrm{At least two heads}] &= Pr[HHH] + Pr[HHT] + Pr[HTH] + Pr[THH] \cr
 \end{aligned}
 $$
 
-$$Pr[\textrm{No heads}] = Pr[TTT] = q^3 = (0.5)^3 = 0.125$$
+$$\text{Pr}[\textrm{No heads}] = \text{Pr}[TTT] = q^3 = (0.5)^3 = 0.125$$
 
 #### Sampling with Replacement
 
@@ -265,7 +265,7 @@ The notation for combinations is $$C^{N}_k$$ = $${N}\choose{k}$$
 A **conditional probability** is a probability that a certain event will occur given some knowledge about the outcome or some other event. $$P[A \mid B]$$ is a conditional probability, it is read as "Probability of A given B".
 
 \begin{equation}
-    Pr[A|B] = \frac{Pr[AB]}{Pr[B]}
+    \text{Pr}[A|B] = \frac{\text{Pr}[AB]}{\text{Pr}[B]}
 \end{equation}
 
 Rule of Conditional Probability
@@ -273,12 +273,12 @@ Rule of Conditional Probability
 
 A simple example - A fair 12-sided die is rolled. What is the probability that the roll is a 3 given that the roll is odd?
 
-This is $$Pr[3 \mid \text{Odd}]$$ or $$\frac{Pr[3]Pr[\text{Odd}]}{Pr[\text{Odd}]}$$
+This is $$\text{Pr}[3 \mid \text{Odd}]$$ or $$\frac{\text{Pr}[3]\text{Pr}[\text{Odd}]}{\text{Pr}[\text{Odd}]}$$
 
 Because $$B$$ has already happened, the intersection of $$B$$ and $$A$$ can have the $$B$$ probability removed, because it is statistically redundant.
 
 \begin{equation}
-    Pr[A|B] = \frac{Pr[AB]}{Pr[B]} = \frac{Pr[B]Pr[A]}{Pr[A]} = Pr[B]
+    \text{Pr}[A|B] = \frac{\text{Pr}[AB]}{\text{Pr}[B]} = \frac{\text{Pr}[B]\text{Pr}[A]}{\text{Pr}[A]} = \text{Pr}[B]
 \end{equation}
 
 Conditional Probability if statiscally independent
@@ -291,7 +291,7 @@ When attempting to compute the conditional probability of two events, when only 
 *Consider $$H$$ to be Hypothesis, and $$E$$ to be Evidence*
 
 \begin{equation}
-    Pr[H|E] = \frac{Pr[E|H] Pr[H]}{Pr[E]}
+    \text{Pr}[H|E] = \frac{\text{Pr}[E|H] \text{Pr}[H]}{\text{Pr}[E]}
 \end{equation}
 
 Bayes Theorem
@@ -299,32 +299,32 @@ Bayes Theorem
 
 We can expand the equation in the numerator to demonstrate fully:
 
-$$Pr[E|H]Pr[H] = \frac{Pr[EH]}{Pr[H]}*Pr[H] = Pr[EH] = Pr[HE]$$
+$$\text{Pr}[E|H]\text{Pr}[H] = \frac{\text{Pr}[EH]}{\text{Pr}[H]}*\text{Pr}[H] = \text{Pr}[EH] = \text{Pr}[HE]$$
 
-Therefore, $$Pr[H \mid E]$$ or $$\frac{Pr[HE]}{Pr[E]}$$ can be found from $$Pr[E \mid H]$$ and vice versa.
+Therefore, $$\text{Pr}[H \mid E]$$ or $$\frac{\text{Pr}[HE]}{\text{Pr}[E]}$$ can be found from $$\text{Pr}[E \mid H]$$ and vice versa.
 
 #### Total Probability
 
 If $$A_1, A_2$$, and $$A_3$$ form a partition of the sample space, for each $$A_i$$
 
 \begin{equation}
-    Pr[A_i|B] = \frac{Pr[B|A_i] Pr[A_i]}{Pr[B]}, i = 1,2,3
+    \text{Pr}[A_i|B] = \frac{\text{Pr}[B|A_i] \text{Pr}[A_i]}{\text{Pr}[B]}, i = 1,2,3
 \end{equation}
 
 Total Probability
 {:.figcaption}
 
-Knowing this, $$Pr[B]$$ can be found from $$Pr[B \mid A_1] + Pr[B \mid A_2] + Pr[B \mid A_3]$$
+Knowing this, $$\text{Pr}[B]$$ can be found from $$\text{Pr}[B \mid A_1] + \text{Pr}[B \mid A_2] + \text{Pr}[B \mid A_3]$$
 
 \begin{equation}
-    Pr[A_i|B] = \frac{Pr[B|A_i] Pr[A_i]}{Pr[B|A_1] + Pr[B|A_2] + Pr[B|A_3]}, i = 1,2,3
+    \text{Pr}[A_i|B] = \frac{\text{Pr}[B|A_i] \text{Pr}[A_i]}{\text{Pr}[B|A_1] + \text{Pr}[B|A_2] + \text{Pr}[B|A_3]}, i = 1,2,3
 \end{equation}
 
 Bayes General Rule
 {:.figcaption}
 
 \begin{equation}
-    Pr[B] = Pr[B|A_1] + Pr[B|A_2] + Pr[B|A_3]
+    \text{Pr}[B] = \text{Pr}[B|A_1] + \text{Pr}[B|A_2] + \text{Pr}[B|A_3]
 \end{equation}
 
 Total Probability, when $$A_1$$, $$A_2$$, $$A_3$$ form a partition
@@ -342,7 +342,7 @@ Discrete random variables involve events with a discrete set of values.
 
 The *Probability Mass Function*, or **PMF** $$f_k [k]$$ is a plotting of the probability of all events associated with a random variable $$K$$. The sum of all amplitudes of the graph, $$\sum f_k [k]$$ will be 1.
 
-For a given value $$k$$, the probability of this value is $$f_k[k] = Pr[K = k]$$.
+For a given value $$k$$, the probability of this value is $$f_k[k] = \text{Pr}[K = k]$$.
 
 Consider $$f_k[k]$$ the ranking of weights of each possible outcome. If an outcome is more probable, it is heavier, and plotted above the others.
 
@@ -378,7 +378,7 @@ For a situtation where revents occur randomly at a given rate $$\lambda$$ over a
 Poisson Random Variable PMF
 {:.figcaption}
 
-Note that for finding the probability of an event occurring after time $$t$$, the probability becomes $$Pr[0] + Pr[1] + Pr[2] ... + Pr[t]$$.
+Note that for finding the probability of an event occurring after time $$t$$, the probability becomes $$\text{Pr}[0] + \text{Pr}[1] + \text{Pr}[2] ... + \text{Pr}[t]$$.
 
 #### Uniform Random Variable
 
@@ -393,14 +393,14 @@ Uniform Distribution
 
 ### Continous RVs and Their Distributions
 
-For values which can take on a continuum of values, such as voltage, velocity, and mass, new tools are used to analyze their probability. The probability of these events is determined using the *Cumulative Distribution Function* or **CDF**, which is written as $$F_X(x) = Pr[X \leq x]$$.
+For values which can take on a continuum of values, such as voltage, velocity, and mass, new tools are used to analyze their probability. The probability of these events is determined using the *Cumulative Distribution Function* or **CDF**, which is written as $$F_X(x) = \text{Pr}[X \leq x]$$.
 
 By this notation we can see that by following the graph from left to right, the probability of the event occuring to the **left** of value $$x$$ will be found by the amplitude of the CDF at that value. Therefore, as $$x \rightarrow \infty$$, $$F_x \rightarrow 1$$.
 
 When finding the probability of a value occurring between points $$a$$ and $$b$$, their CDF values can be used. Remember this is **Distribution**, not **Density**, as we'll see in the PDF below. By keeping this straight, their purposes should be easy to remember.
 
 \begin{equation}
-    Pr[a < X \leq b] = F_X(b) - F_x(a)
+    \text{Pr}[a < X \leq b] = F_X(b) - F_x(a)
 \end{equation}
 
 CDF Probability Within a Range (b $$>$$ a)
@@ -409,7 +409,7 @@ CDF Probability Within a Range (b $$>$$ a)
 The *Probability Density Function* or **PDF** is a derivative of the CDF that can also be used to find this probability:
 
 \begin{equation}
-    Pr[a < X \leq b] = \int_{b}^{a}f_X(x)dx 
+    \text{Pr}[a < X \leq b] = \int_{b}^{a}f_X(x)dx 
 \end{equation}
 
 CDF Probability Within a Range (b $$>$$ a) From Integration
@@ -420,29 +420,168 @@ This can be seen to be similar to the Probability Mass Function, as it will inte
 To use the PDF to find the probability of a number $$a + \Delta x$$, we can multiply the PDF value at this point by the increment value to find the probability.
 
 \begin{equation}
-    Pr[a < X \leq a + \Delta x] = f_X(a) \cdot \Delta x
+    \text{Pr}[a < X \leq a + \Delta x] = f_X(a) \cdot \Delta x
 \end{equation}
 
 PDF Probability Within a Range ($$a < a + \Delta x$$)
 {:.figcaption}
 
-Integrating over a range ($$a, b$$) will also produce $$Pr[a < x \leq b]$$ from the PDF.
+Integrating over a range ($$a, b$$) will also produce $$\text{Pr}[a < x \leq b]$$ from the PDF.
 
 ### Common Continuous RVs
 
 #### Exponential Random Value
 
+An extension of the Geometric Random Variable to the continuous realm, this represents a continuous graph of wait times where again $$\lambda$$ represents the rate of arrival for an event as in Poisson RVs.
+
+Its PDF follows $$f_X(x) = \lambda e^{-\lambda x}$$
 #### Gaussian RV
 
-#### Gaussian O Values
+The Gaussian or "normal" random variable arises naturally in numerous cases. It can be defined by its mean, $$\mu$$, which will be the center of its bell shape, and its standard deviation $$\sigma$$, which denotes the value in each direction it will pass before reaching $$60.7\%$$ of its peak value.
+
+\begin{equation}
+    f_X(x) = \frac{1}{\sqrt{2\pi \sigma ^2}} e^{-(x-\mu)^2/2\sigma ^2}
+\end{equation}
+
+The Gaussian PDF
+{:.figcaption}
+
+The square of the standard deviation, $$\sigma ^2$$ is known as the variance, and is a measure of the total width of the bell between these points.
+
+The standard form of the PDF, centered at $$0$$ with a $$\sigma ^2$$ $$=1$$ can be used to express $$\text{Pr}[X \leq x]$$:
+
+\begin{equation}
+    \Phi(x) = \frac{1}{\sqrt{2\pi}} \int_{\infty}^{x}e^{-x^2/2}
+\end{equation}
+
+The Standard Gaussian Function
+{:.figcaption}
+
+$$F_X(x) = \text{Pr}[X \leq x] = \Phi (\frac{x - \mu}{\sigma})$$
+
+And as with any other CDF, $$\text{Pr}[a < x \leq b] = F_X(b) - F_x(a)$$
+
+These $$\Phi$$ values, which can be used as a CDF, as with other standard Gaussian values, can be found by table.
+
+#### Gaussian Q Values
+
+In cases where the probablity of values at either tail of a Gaussian is required, such as $$\text{Pr}[a < x \leq \infty]$$, it is common to use $$Q$$ functions.
+
+\begin{equation}
+    Q(x) = 1 - \Phi(x)
+\end{equation}
+
+The Gaussian Q Function
+{:.figcaption}
+
+When a value $$x$$ is sought which is less than $$\mu$$, the argument of the $$Q$$ function will be negative, and define the left tail of the CDF. $$Q(-x) = 1 - Q(x)$$.
+
+\begin{equation}
+    \text{Pr}[X < x] = Q(\frac{x - \mu}{\sigma})
+\end{equation}
+
+The Gaussian Q Function
+{:.figcaption}
+
+\begin{equation}
+    \text{Pr}[X > x] = 1- Q(x) = Q(\frac{- x + \mu}{\sigma})
+\end{equation}
+
+The Gaussian Q Function with Negative Argument
+{:.figcaption}
+
+$$\text{Pr}[a \leq x \leq b] = Q(\frac{b-\mu}{\sigma}) - Q(\frac{a-\mu}{\sigma})$$
 
 ### Expectation
 
+Expecation can be considered the average of the expected values in a sample space, where the values are weighted by their probability and summed.
+
+\begin{equation}
+    E\{X\} = \sum kf_K[k]
+\end{equation}
+
+Expectation of a Discrete RV
+{:.figcaption}
+
+For continuous random variables, when the PDF exists, the expectation can be calculated whenever the variable converges absolutely:
+
+\begin{equation}
+    E\{X\} = \int_{-\infty}^{\infty}xf_X(x)dx
+\end{equation}
+
+Expectation of a Continuous RV
+{:.figcaption}
+
+An important feature of the expectation is its **invariance**.
+
+$$E\{c\} = c$$
+
+$$E\{X + c\} = E\{X\} + c$$
+    
+$$E\{cX\} = cE\{X\}$$
+    
+$$E\{E\{X\}\} = E\{X\}$$
+
 #### Moments
+
+The moment is the produced when the $$X$$ value of the expectation is raised to the $$n$$ power. If $$g(X) = X^n$$ for $$n$$ = 1, 2, 3
+
+$$E\{X^n\} = \int_{-\infty}^{\infty}x^nf_X(x)dx$$  
+
+Continous Moment
+{:.figcaption}
+
+$$E\{X^n\} = \sum k^n f_K[k]$$
+
+Discrete Moment
+{:.figcaption}
+
+The first moment is the *mean*, and each further $$n$$ value is called the $$n$$th moment of the distribution.
 
 #### Central Moments
 
+The *Central Moment* is a mean of a random variable not centered at 0. Of particular importance is the **variance**, the square root of which will grant the width of the distribution.
+
+
+$$\sigma^2 = \text{Var}[X] = E\{(X-m_X)^2\}$$
+
+The 2nd Central Moment
+{:.figcaption}
+
+$$m_X = E\{X\}$$
+
+The mean of $$X$$
+{:.figcaption}
+
+The Standard Deviation is represented as $$\sigma_X$$, and is a measure of the width.
+
+$$\text{Var}[c] = 0$$
+    
+$$\text{Var}[X + c] = \text{Var}[X]$$
+    
+$$\text{Var}[cX] = c^2 \text{Var}[X]$$
+
+Also note, $$\text{Var}[X] = E\{X^2\} - m_X^2$$ - this method is much easier to solve than the initial method of finding variance.
+
 ### Entropy
+
+From the topic of information encoding, it was found that the definition of information for an event $$A$$ is:
+
+$$I(A) = -\text{log}_2\text{Pr}[A] \text{bits}$$
+
+And the average of information for two exclusive events $$A$$ and $$B$$:
+
+$$H = \text{Pr}[A]I(A) + \text{Pr}[B]I(B)$$
+
+The definition of average information is in fact an expectation for two events that form a partition of a sample space.
+
+For a partition $$A_i$$ where $$I(A_i) = -\text{log}_2\text{Pr}[A_i]$$,
+
+$$H = E\{I\} = \sum I(A_i)\text{Pr}[A_i] = \sum(-\text{log}\text{Pr}[A_i])\text{Pr}[A_i]$$
+
+or,
+
+$$-\sum(\text{log}_2\text{Pr}[A_i])\text{Pr}[A_i]$$
 
 ## Multiple Random Variables
 
@@ -450,23 +589,144 @@ Integrating over a range ($$a, b$$) will also produce $$Pr[a < x \leq b]$$ from 
 
 #### The Joint PMF
 
+Joint probability distribution can be thought of as $$\text{Pr}[(X \leq x \text{ and } Y \leq y)]$$
+
+Or as $$F_{X,Y}(x,y)$$ where $$F_X(x) = \text{Pr}[X \leq x]$$ and $$F_Y(y) = \text{Pr}[Y \leq y]$$
+
+A relationship can be *deterministic*, such as $$Y = 2X + 1$$ or *probabilistic*, where probabilities of one value will affect the other.
+
+**Joint Probabilities** refers to the probability of two variables taken together, such as $$\text{Pr}[(X \leq q) \text{ and } (Y \leq y)]$$. To answer this, the **Joint CDF**, $$F_{X,Y}(x,y)$$ must be found.
+
+Recall from single random variable discussion, the PDF is the derivative of the CDF. Therefore, for cases where there are multiple variables:
+
+$$f_{X,Y}(x,y) = \frac{\partial}{\partial x} \frac{\partial}{\partial y}F_{X,Y}(x,y)$$
+
+For continuous distributions, the variables $$x$$ and $$y$$ will be used, however discrete distributions use $$k$$, $$l$$, and so on.
+
+From each joint distribution, individual distributions for each variable, or \textbf{Marginal Distributions} can be found. These are simply the PDFs of the individual random variables found in earlier sections.
+
+$$f_{K_1}[k_1] = \sum\limits_{k2=-\infty}^\infty f_{K_1K_2}[k_1,k_2]$$
+
+$$f_{K_2}[k_2] = \sum\limits_{k1=-\infty}^\infty f_{K_1K_2}[k_1,k_2]$$  
+
 #### Independant Random Variables
+
+From earlier in the course, events were defined as independent if $$\text{Pr}[AB]$$ = $$\text{Pr}[A]$$. Similarly, random variables can be said to be independent if the product of marginal distributions is equal to the joint distribution.
+
+$$f_{K_1K2}[k_1,k_2] = f_{K_1}[k_1]\cdot f_{K_2}[k_2]$$
+
+$$f_{X,Y}(x,y) = f_{X}(x)\cdot f_{Y}(y)$$
+
+Notice that this is a special condition for random variables and does not apply in general! In particular, if two random variables are not independent, there is no way that the joint PMF can be inferred from the marginals. In that case the marginals are insufficient to describe any joint properties between $$K_1$$ and $$K_2$$.
 
 ### Continuous Random Variables
 
 #### Joint Distributions
 
+**CDF**: $$f_{X_1X_2}(x_1,x_2) = \frac{\partial^2F_{X_1X_2}(x_1,x_2) }{\partial x_1 \partial x_2}$$
+ 
+**PDF**: $$F_{X_1X_2}(x_1,x_2) = \int_{-\infty}^{x_1} \int_{-\infty}^{x_2} f_{X_1X_2}(u_1,u_2)du_1du_2$$
+
+Joint continuity can be proven if the PDF evaluates to 1.
+
 #### Marginal PDFs
+
+Similar to the marginal PMF, each distribution $$X_1$$ and $$X_2$$ can be described by its own PDF:
+
+$$f_{X_1}(x_1) = \int_{-\infty}^{\infty} f_{X_1X_2}(x_1,x_2)dx_2$$
+
+$$f_{X_2}(x_2) = \int_{-\infty}^{\infty} f_{X_1X_2}(x_1,x_2)dx_1$$
 
 #### Correlation
 
+Correlation is defined as the similarity between two random variables $$X_1$$ and $$X_2$$. Note that this is the multiplication of $$X_1$$ and $$X_2$$, not an "and".
+
+$$r = E\{X_1X_2\}$$
+
+The correlation is calculated using the expectation, worked out as the expectation for $$g$$($$X_1,X_2$$) = $$X_1X_2$$ based on the joint PDF for $$X_1$$ and $$X_2$$.
+
+$$r = E\{X_1X_2\} = \int \int x_1x_2f_{X_1,X_2}(x_1,x_2)dx_1dx_2$$
+
+$$r = E\{KL\} = \sum\limits_k \sum\limits_l klf_{K,L}(k,l)$$
+
+The correlation can be misleading if both $$X_1$$ and $$X_2$$ have offsets built in to their means. The get around this, *covariance* is defined to remove their means.
+
+$$c = \text{Cov}[X_1,X_2] = E\{(X_1 - m_1)(X_2 - m_2)\}$$
+
+Where $$m_1$$ and $$m_2$$ are the means of the two random variables taken seperately:
+
+$$m_1 = E\{X_1\} = \int x_1f_{X1}(x_1)dx_1$$
+
+$$m_2 = E\{X_2\} = \int x_1f_{X2}(x_2)dx_2$$
+
+*Note* - Covariance is similar to variance, in that variance is a measure of how to the outcome of $$X_1$$ can vary, while covariance is the measure of how the outcome of $$X_1$$ and $$X_2$$ can vary together.
+
+Also similarly to variance:
+
+$$\text{Var}[X] = E\{X^2\} - m^2_x$$
+
+$$\text{Cov}[X_1,X_2] = E\{(X_1-m_1)(X_2-m_2)\} = E\{X_1X_2\} = m_1m_2 = r - m_1m_2$$
+
 #### Correlation Coefficient
+
+If comparing the correlation of one of pair of random variables to the correlation of another pair of random variables, both can be normalized based on their standar deviations:
+
+$$p = \frac{\text{Cov}[X_1,X_2]}{\sigma_1\sigma_2}$$
+
+Where $$\sigma_1$$ and $$\sigma_2$$ are the standard deviations of $$X_1$$ and $$X_2$$.
 
 #### Invariance of Expectation
 
+If a random variable $$X$$ with PDF $$f_X(x)$$ is transformed to another random variable $$Y$$ by a *deterministic* relationship, $$Y = g(X)$$, e.g.
+
+$$Y = 3X +2$$
+
+Then moments for $$Y$$ can be obtained from the PDF of $$X$$, without calculating the new PDF $$f_Y(y)$$:
+
+$$E\{Y\} = \int g(x)f_X(x)dx$$
+
 ### Sum of Multiple RVs
 
+Because the expectation $$E\{\}$$ is an integral, for the case that $$Y = X_1 + X_2$$ for RVs $$X_1$$ and $$X_2$$:
+
+$$E\{Y\} = E\{X_1\} + E\{X_2\} = m_{X1} + m_{X2}$$
+
+Therefore, because variance will distribute via multiplication:
+
+$$\text{Var}[Y] = E\{(Y-m_Y)^2\} = E\{(X_1 + X_2) - (m_{X_1} + m_{X_2}))^2\}$$
+
+$$ = E\{((X_1 - m_{X_1}) + E\{(X_2 - m_{X_2}))^2\}$$
+
+$$ = E\{(X_1 - m_{X_1})^2 + E\{(X_2 + m_{X_2})^2 + 2E\{(X_1 = m_{X_1})(X_2 - m_{X_2}\}\}$$
+
+$$ \text{Var}[Y] = \text{Var}[X_1] + \text{Var}[X_2] + 2\text{Cov}[X_1,X_2]$$
+
+$$\text{Var}[Y]$$ therefore also depends on $$\text{Cov}[X_1,X_2]$$. If $$X_1$$ and $$X_2$$ are independent, $$\text{Cov}[X_1,X_2] = 0$$, and $$\text{Var}[Y] = \text{Var}[X_1] + \text{Var}[X_2]$$.
+
 #### PDF for $$X_1 + X_2$$
+
+Begin by finding the CDF in a method similar to discrete RVs:
+
+$$
+\begin{aligned}
+F_Y(y) &= \text{Pr}[Y \leq y] = \text{Pr}[X_1 + X_2 \leq y] \cr
+        &= \int (\int\limits^{y-x_1}_{-\infty}f_{X_1,X_2}(x_1,x_2)dx_2)dx_1
+\end{aligned}
+$$
+
+Note the limit of integration for the $$f_{X2}$$ portion uses the upper limit as the equivalent of $$x_2$$ (because $$y = x_1 + x_2$$)
+
+The PDF can be obtained from this because $$f_Y(y) = \frac{d}{dy}F_Y(y)$$
+
+$$f_Y(y) = \frac{d}{dy} ß\int (\int\limits^{y-x_1}_{-\infty}f_{X_1,X_2}(x_1,x_2)dx_2)dx_1$$
+
+Because $$\frac{d}{dt}\int\limits_{-\infty}^{t-a}g(\theta)d\theta = g(t-a)$$,
+
+$$f_Y(y) = \int\limits_{-\infty}^{\infty}f_{X_1,X_2}(x_1,y-x_1)dx_1$$
+
+If the two RVs are independent,
+
+$$f_Y(y) = \int\limits^{\infty}_{-\infty}f_{X_1}(x_1)f_{X_2}(y-x_1)dx_1$$
 
 #### Notes on Sums of Independent RVs
 
