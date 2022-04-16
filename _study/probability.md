@@ -231,7 +231,7 @@ The number of possible sets is $$N!$$ or $$N * (N-1) * (N-2) * ... 2 * 1$$
 
 **Example** - The 13 cards of a suit in a deck of cards can be laid out in $$13!$$ or $$6227020800$$ different ordered sequences.
 
-If you want just $k$ draws from $N$ possible ways to draw the object, the number of sets will instead be from $$N$$ to $$(N-k+1)$$
+If you want just $$k$$ draws from $$N$$ possible ways to draw the object, the number of sets will instead be from $$N$$ to $$(N-k+1)$$
 
 Consider this problem - Lisa has 13 different ornaments and wants to put 4 ornaments on her mantle. In how many ways is this possible?
 
@@ -346,6 +346,14 @@ For a given value $$k$$, the probability of this value is $$f_k[k] = \text{Pr}[K
 
 Consider $$f_k[k]$$ the ranking of weights of each possible outcome. If an outcome is more probable, it is heavier, and plotted above the others.
 
+<p align="center">
+    <img src="/assets/img/study-guides/probability/pmf.png">
+</p>
+
+Probability Mass Function
+{:.figcaption}
+
+
 #### Bernouli Random Variable
 
 A Bernoulli RV is a discrete variable which will only produce values of $$1$$ and $$0$$. Therefore, the likelhood of one will be $p$ and the other will be $$1-p$$.
@@ -359,6 +367,14 @@ As shown in earlier sections, there are $$n\choose{k}$$ possible variations of $
 #### Geometric Random Variable
 
 Geometric RVs concern a wait for an event to happen. Should the expected event be given $$p$$ probability, there will be $$k$$ consecutive $$(1-p)$$ events before the $$p$$ occurs. Therefore, as seen in the graph below, the event occuring at the second transmission will be $$(1-p)^2p$$.
+
+<p align="center">
+    <img src="/assets/img/study-guides/probability/geo1.png">
+</p>
+
+Geometric Random Variable
+{:.figcaption}
+
 
 \begin{equation}
     f_K[k] = p(1-p)^k
@@ -391,11 +407,19 @@ When all events are equally likely, the probability of each can be found easily 
 Uniform Distribution
 {:.figcaption}
 
+<p align="center">
+    <img src="/assets/img/study-guides/probability/uniform.png">
+</p>
+
 ### Continous RVs and Their Distributions
 
 For values which can take on a continuum of values, such as voltage, velocity, and mass, new tools are used to analyze their probability. The probability of these events is determined using the *Cumulative Distribution Function* or **CDF**, which is written as $$F_X(x) = \text{Pr}[X \leq x]$$.
 
 By this notation we can see that by following the graph from left to right, the probability of the event occuring to the **left** of value $$x$$ will be found by the amplitude of the CDF at that value. Therefore, as $$x \rightarrow \infty$$, $$F_x \rightarrow 1$$.
+
+<p align="center">
+    <img src="/assets/img/study-guides/probability/cdf.png">
+</p>
 
 When finding the probability of a value occurring between points $$a$$ and $$b$$, their CDF values can be used. Remember this is **Distribution**, not **Density**, as we'll see in the PDF below. By keeping this straight, their purposes should be easy to remember.
 
@@ -407,6 +431,10 @@ CDF Probability Within a Range (b $$>$$ a)
 {:.figcaption}
 
 The *Probability Density Function* or **PDF** is a derivative of the CDF that can also be used to find this probability:
+
+<p align="center">
+    <img src="/assets/img/study-guides/probability/pdf1.png">
+</p>
 
 \begin{equation}
     \text{Pr}[a < X \leq b] = \int_{b}^{a}f_X(x)dx 
@@ -446,6 +474,10 @@ The Gaussian or "normal" random variable arises naturally in numerous cases. It 
 The Gaussian PDF
 {:.figcaption}
 
+<p align="center">
+    <img src="/assets/img/study-guides/probability/gauss.png">
+</p>
+
 The square of the standard deviation, $$\sigma ^2$$ is known as the variance, and is a measure of the total width of the bell between these points.
 
 The standard form of the PDF, centered at $$0$$ with a $$\sigma ^2$$ $$=1$$ can be used to express $$\text{Pr}[X \leq x]$$:
@@ -476,6 +508,10 @@ The Gaussian Q Function
 
 When a value $$x$$ is sought which is less than $$\mu$$, the argument of the $$Q$$ function will be negative, and define the left tail of the CDF. $$Q(-x) = 1 - Q(x)$$.
 
+<p align="center">
+    <img src="/assets/img/study-guides/probability/q1.png">
+</p>
+
 \begin{equation}
     \text{Pr}[X < x] = Q(\frac{x - \mu}{\sigma})
 \end{equation}
@@ -489,6 +525,10 @@ The Gaussian Q Function
 
 The Gaussian Q Function with Negative Argument
 {:.figcaption}
+
+<p align="center">
+    <img src="/assets/img/study-guides/probability/q2.png">
+</p>
 
 $$\text{Pr}[a \leq x \leq b] = Q(\frac{b-\mu}{\sigma}) - Q(\frac{a-\mu}{\sigma})$$
 
@@ -605,6 +645,14 @@ For continuous distributions, the variables $$x$$ and $$y$$ will be used, howeve
 
 From each joint distribution, individual distributions for each variable, or \textbf{Marginal Distributions} can be found. These are simply the PDFs of the individual random variables found in earlier sections.
 
+<p align="center">
+    <img src="/assets/img/study-guides/probability/marginal.png">
+</p>
+
+<p align="center">
+    <img src="/assets/img/study-guides/probability/marginal2.png">
+</p>
+
 $$f_{K_1}[k_1] = \sum\limits_{k2=-\infty}^\infty f_{K_1K_2}[k_1,k_2]$$
 
 $$f_{K_2}[k_2] = \sum\limits_{k1=-\infty}^\infty f_{K_1K_2}[k_1,k_2]$$  
@@ -623,6 +671,10 @@ Notice that this is a special condition for random variables and does not apply 
 
 #### Joint Distributions
 
+<p align="center">
+    <img src="/assets/img/study-guides/probability/joint-cdf.png">
+</p>
+
 **CDF**: $$f_{X_1X_2}(x_1,x_2) = \frac{\partial^2F_{X_1X_2}(x_1,x_2) }{\partial x_1 \partial x_2}$$
  
 **PDF**: $$F_{X_1X_2}(x_1,x_2) = \int_{-\infty}^{x_1} \int_{-\infty}^{x_2} f_{X_1X_2}(u_1,u_2)du_1du_2$$
@@ -636,6 +688,10 @@ Similar to the marginal PMF, each distribution $$X_1$$ and $$X_2$$ can be descri
 $$f_{X_1}(x_1) = \int_{-\infty}^{\infty} f_{X_1X_2}(x_1,x_2)dx_2$$
 
 $$f_{X_2}(x_2) = \int_{-\infty}^{\infty} f_{X_1X_2}(x_1,x_2)dx_1$$
+
+<p align="center">
+    <img src="/assets/img/study-guides/probability/marginal-pdf.png">
+</p>
 
 #### Correlation
 
@@ -750,6 +806,10 @@ $$
 ### Bivariate Gaussian
 
 Two joint RVs with Gaussian characteristics together will have a joint Gaussian characteristic, called *bivariate* or *multi-variate* for more than 2.
+
+<p align="center">
+    <img src="/assets/img/study-guides/probability/bivariate.png">
+</p>
 
 ## Limit Theorems
 
