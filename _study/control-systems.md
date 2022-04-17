@@ -183,10 +183,10 @@ Steady-state error can be calculated from transfer function $$T(s)$$ or the open
 $$E(s) = R(s) - C(s)$$
 $$C(s) = R(s)T(s)$$
 $$E(s) = R(s)[1 - T(s)]$$
-$$e(\infty) = \text lim _ s\rightarrow \infty   e(t) = \text lim _ s\rightarrow 0   sE(s)$$
-$$e(\infty) = \text lim _ s\rightarrow 0  sR(s)[1 - T(s)]$$
+$$e(\infty) = \text{lim}_s\rightarrow \infty   e(t) = \text{lim}_s\rightarrow 0   sE(s)$$
+$$e(\infty) = \text{lim}_s\rightarrow 0  sR(s)[1 - T(s)]$$
 
-#### Steady State Error in Terms of G(s)
+#### Steady State Error in Terms of $$G(s)$$
 
 <p align="center">
     <img src="/assets/img/study-guides/control-systems/unityfeedback.png">
@@ -195,7 +195,7 @@ $$e(\infty) = \text lim _ s\rightarrow 0  sR(s)[1 - T(s)]$$
 $$E(s) = R(s) - C(s)$$
 $$C(s) = E(s)G(s)$$ 
 $$E(s) = \frac{R(s)}{1 + G(s)}$$
-$$e(\infty) = \text lim _ s\rightarrow \infty  \frac{sR(s)}{1 + G(s)}$$
+$$e(\infty) = \text{lim}_s\rightarrow \infty  \frac{sR(s)}{1 + G(s)}$$
 
 ### Static Error Constants and System Type
 
@@ -359,7 +359,9 @@ $$T(s) = \frac{KG(s)H(s)}{1 + KG(s)H(s)} = \frac{10}{s^2 + (p_1 +2)s + 2p_1 + 10
 
 ### Positive Feedback Systems
 
-$$KG(s)H(s) = 1 = 1 \angle k360^\circ  k = 0, 1, 2, 3... $$
+$$KG(s)H(s) = 1 = 1 \angle k 360^\circ$$
+
+$$k = 0, 1, 2, 3 ...$$
 
 * **Number of Branches**
 No change
