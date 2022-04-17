@@ -65,9 +65,9 @@ ROMs were intended as memory devices (such as cartridges) but could be used for 
 
 Programmable Logic Arrays (PLA) are based on the notion that any logic function is a combination of product terms OR'd together.
 
-\begin{center}
-    \includegraphics[width=300 px]{pla}
-\end{center}
+<p align="center">
+    <img src="/assets/img/study-guides/digital-systems/pla.png">
+</p>
 
 ### FPGAs
 
@@ -96,15 +96,15 @@ Field Programmable Gate Arrays are flexible programmable logic for larger design
 
 ### Timing
 
-$$\verb#C <= A and B after 5 ns#  $$
+$$C <= A \text{ and } B \text{ after 5 ns}$$
 
 The **after** will ensure A and B are assigned to C 5 ns after being evaluated.  
 
-$$\verb#C <= reject 3 ns inertial A and B after 5 ns#$$
+$$C <= \text{ reject 3 ns inertial } A \text{ and } B \text{ after 5 ns}$$
 
 If a pulse occurs for less than 3 ns, it will be rejected. If longer than the rejection time, it will be propogated after a 5 ns delay. Inertial delay is the default delay assumed by VHDL.
 
-$$\verb#C <= transport A after 10 ns#$$
+$$C <= \text{ transport } A \text{ after 10 ns}$$
 
 Transport will delay the signals without rejecting.
 
